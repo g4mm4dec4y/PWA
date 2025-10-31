@@ -1,4 +1,4 @@
-const express = require("express");
+/* const express = require("express");
 const path = require("path");
 const app = express();
 app.use(express.static(path.join(__dirname, "public/index.html")));
@@ -8,3 +8,16 @@ app.get("/", function (req, res) {
 });
 
 app.listen(8000, () => console.log("Server is running on Port 8000, visit http://localhost:8000/ or http://127.0.0.1:8000 to access your website"));
+
+*/
+
+const express = require('express');
+const app = express();
+
+app.get('/', (req,res) => {
+    res.send("Hello, World");
+});
+
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
